@@ -1,0 +1,67 @@
+{
+  "name": "SamPixel - AI Image Toolkit",
+  "short_name": "SamPixel",
+  "description": "Professional AI-powered image processing tools for background removal, upscaling, watermarking, and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "orientation": "portrait-primary",
+  "categories": ["photo", "productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "375x667",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Background Remover",
+      "short_name": "Remove BG",
+      "description": "Remove image backgrounds with AI",
+      "url": "/tools/background-remover",
+      "icons": [
+        {
+          "src": "/icon-bg-remover.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Image Upscaler",
+      "short_name": "Upscale",
+      "description": "Enhance image quality with AI",
+      "url": "/tools/image-upscaler",
+      "icons": [
+        {
+          "src": "/icon-upscaler.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}

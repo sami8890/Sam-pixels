@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>SamPixel - AI Image Toolkit | Background Remover, Upscaler & More</title>
+    <meta name="title" content="SamPixel - AI Image Toolkit | Background Remover, Upscaler & More" />
+    <meta name="description" content="Transform your images with AI-powered tools. Remove backgrounds, upscale quality, add watermarks, and crop for social media. Fast, free, and professional results." />
+    <meta name="keywords" content="AI image editor, background remover, image upscaler, watermark tool, photo editor, image processing" />
+    <meta name="author" content="SamPixel Team" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sampixel.com/" />
+    <meta property="og:title" content="SamPixel - AI Image Toolkit" />
+    <meta property="og:description" content="Transform your images with AI-powered tools. Remove backgrounds, upscale quality, add watermarks, and crop for social media." />
+    <meta property="og:image" content="https://sampixel.com/og-image.jpg" />
+    <meta property="og:site_name" content="SamPixel" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://sampixel.com/" />
+    <meta property="twitter:title" content="SamPixel - AI Image Toolkit" />
+    <meta property="twitter:description" content="Transform your images with AI-powered tools. Remove backgrounds, upscale quality, add watermarks, and crop for social media." />
+    <meta property="twitter:image" content="https://sampixel.com/og-image.jpg" />
+    <meta property="twitter:creator" content="@sampixel" />
+    
+    <!-- Additional Meta Tags -->
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="theme-color" content="#3B82F6" />
+    <meta name="msapplication-TileColor" content="#3B82F6" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="SamPixel" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sampixel.com/" />
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3B82F6" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/hero-bg.webp" as="image" type="image/webp" />
+    
+    <!-- DNS Prefetch for external domains -->
+    <link rel="dns-prefetch" href="//js.stripe.com" />
+    <link rel="dns-prefetch" href="//api.cloudinary.com" />
+    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SamPixel",
+      "description": "AI-powered image processing toolkit for background removal, upscaling, watermarking, and more.",
+      "url": "https://sampixel.com",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "SamPixel",
+        "url": "https://sampixel.com"
+      },
+      "featureList": [
+        "AI Background Removal",
+        "Image Upscaling",
+        "Text Watermarking",
+        "Image Cropping and Resizing"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
